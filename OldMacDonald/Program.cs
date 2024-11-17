@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OldMacDonald.Animals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,16 @@ namespace OldMacDonald
         {
             Console.WriteLine("Question One Polymorphism:");
             Console.WriteLine();
+            Animal Cat = new Cat();
+            Cat.Sing();
+            Animal Cow = new Cow();
+            Cow.Sing();
+            Animal Dog = new Dog();
+            Dog.Sing();
+            Animal Frog = new Frog();
+            Frog.Sing();
+            Animal Pig = new Pig();
+            Pig.Sing();
         }
     }
 }
