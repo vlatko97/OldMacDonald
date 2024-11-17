@@ -1,0 +1,9 @@
+{
+  "Animals": {
+    "cat": "meow",
+    "cow": "moo",
+    "dog": "woof",
+    "frog": "croak",
+    "pig": "oink"
+  }
+}
