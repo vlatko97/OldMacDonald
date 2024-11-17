@@ -10,6 +10,7 @@ namespace OldMacDonald
         {
             QuestionOnePolymorphism();
             QuestionOneDataDriven();
+            QuestionTwoExtendBy10Animals();
         }
         private static void QuestionOnePolymorphism()
         {
@@ -33,6 +34,27 @@ namespace OldMacDonald
             string pathToDataFile = "../../../Data/Animals.json";
             List<Animal> dataDrivenAnimals = readFromJson(pathToDataFile);
             foreach (Animal animal in dataDrivenAnimals)
+            {
+                animal.Sing();
+            }
+        }
+        private static void QuestionTwoExtendBy10Animals()
+        {
+            Console.WriteLine("Question Two - extend program with 10 more animals:");
+            Console.WriteLine("--------------------------------------------------");
+            string pathToDataFile = "../../../Data/Animals.json";
+            List<Animal> dataDrivenAnimals = readFromJson(pathToDataFile);
+            dataDrivenAnimals.Add(new Animal("bear", "roar"));
+            dataDrivenAnimals.Add(new Animal("bee", "buzz"));
+            dataDrivenAnimals.Add(new Animal("donkey", "hee-haw"));
+            dataDrivenAnimals.Add(new Animal("snake", "hiss"));
+            dataDrivenAnimals.Add(new Animal("duck", "quack"));
+            dataDrivenAnimals.Add(new Animal("bird", "tweet"));
+            dataDrivenAnimals.Add(new Animal("mouse", "squeek"));
+            dataDrivenAnimals.Add(new Animal("elephant", "toot"));
+            dataDrivenAnimals.Add(new Animal("fish", "blub"));
+            dataDrivenAnimals.Add(new Animal("seal", "ow ow ow"));
+            foreach (var animal in dataDrivenAnimals)
             {
                 animal.Sing();
             }
